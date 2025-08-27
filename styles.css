@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌟 CSS Basics & The Box Model</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Learn CSS</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>Master the art of CSS styling and understand how the Box Model shapes every layout on the web.</p>
+        </section>
+
+        <section class="card">
+            <h2>🎨 About CSS</h2>
+            <p>CSS (Cascading Style Sheets) allows you to control the look and feel of your website, from colors and fonts to layouts and animations.</p>
+        </section>
+
+        <section class="card">
+            <h2>📦 The Box Model</h2>
+            <p>The CSS box model consists of <strong>content</strong>, <strong>padding</strong>, <strong>border</strong>, and <strong>margin</strong>. Mastering this is key to professional layouts.</p>
+        </section>
+
+        <button class="cta">Explore More</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Styled Page | Designed with ❤️ in CSS</p>
+    </footer>
+</body>
+</html>
+
+
+
+/* Reset default margins & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff, #e0eafc);
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #4a90e2, #357ABD);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 12px;
+    font-size: 2.2rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Intro section */
+.intro {
+    text-align: center;
+    padding: 30px;
+    background-color: #d9ddd5aa;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+/* Card styling for Box Model demo */
+.card {
+    background: white;
+    border: 2px solid #ccc;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Button styling */
+.cta {
+    display: block;
+    padding: 12px 25px;
+    margin: 30px auto;
+    border: none;
+    background: linear-gradient(90deg, #4a90e2, #357ABD);
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: linear-gradient(90deg, #357ABD, #4a90e2);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+    margin-top: 30px;
+}
